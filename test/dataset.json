@@ -1,0 +1,260 @@
+[
+ {
+  "id": 1,
+  "label": "SCAM",
+  "type": "kyc_expiry",
+  "text": "Dear customer, your SBI account KYC is expired. Update now at http://sbi-kyc-update.xyz or account will be blocked in 24 hours."
+ },
+ {
+  "id": 2,
+  "label": "SCAM",
+  "type": "kyc_expiry",
+  "text": "HDFC Bank: Your KYC is pending. Account will be suspended today. Click http://hdfc-kyc.top/verify to update immediately."
+ },
+ {
+  "id": 3,
+  "label": "SCAM",
+  "type": "kyc_expiry",
+  "text": "आपका केवाईसी अपडेट नहीं है, आपका खाता 24 घंटे में बंद हो जाएगा। तुरंत लिंक खोलें http://kyc-update.icu"
+ },
+ {
+  "id": 4,
+  "label": "SCAM",
+  "type": "kyc_expiry",
+  "text": "Paytm KYC expiring tonight. Complete e-KYC https://paytm-ekyc.cfd/start or wallet will be frozen."
+ },
+ {
+  "id": 5,
+  "label": "SCAM",
+  "type": "upi_collect",
+  "text": "Your refund of Rs 3,200 is ready. Approve the collect request on your UPI app and enter PIN to receive money."
+ },
+ {
+  "id": 6,
+  "label": "SCAM",
+  "type": "upi_collect",
+  "text": "Cashback of Rs 5000 pending. Scan this QR code and enter UPI PIN to receive the amount now."
+ },
+ {
+  "id": 7,
+  "label": "SCAM",
+  "type": "upi_collect",
+  "text": "Sir I sent you Rs 10,000 by mistake. Please approve the request on PhonePe to get it back, enter your PIN to receive."
+ },
+ {
+  "id": 8,
+  "label": "SCAM",
+  "type": "digital_arrest",
+  "text": "This is Mumbai Cyber Crime Branch. A parcel in your Aadhaar contains drugs. You are under digital arrest. Stay on video call and do not tell anyone."
+ },
+ {
+  "id": 9,
+  "label": "SCAM",
+  "type": "digital_arrest",
+  "text": "CBI officer speaking. Your number is linked to a money laundering case. Arrest warrant has been issued. Do not disconnect the call and pay security deposit."
+ },
+ {
+  "id": 10,
+  "label": "SCAM",
+  "type": "digital_arrest",
+  "text": "FedEx customs: illegal passport found in your courier. Connecting you to Narcotics Bureau on WhatsApp video. Do not inform your family."
+ },
+ {
+  "id": 11,
+  "label": "SCAM",
+  "type": "digital_arrest",
+  "text": "आपके नाम से पार्सल में ड्रग्स मिले हैं। सीबीआई अधिकारी से वीडियो कॉल पर जुड़ें, किसी को न बताएं, गिरफ्तारी वारंट जारी हो चुका है।"
+ },
+ {
+  "id": 12,
+  "label": "SCAM",
+  "type": "electricity_bill",
+  "text": "Dear consumer your electricity connection will be disconnected tonight 9:30 pm as previous bill is unpaid. Call 9876501234 immediately."
+ },
+ {
+  "id": 13,
+  "label": "SCAM",
+  "type": "electricity_bill",
+  "text": "बिजली बिल जमा नहीं हुआ है, आज रात 9:30 बजे कनेक्शन कट जाएगा। तुरंत इस नंबर पर संपर्क करें 9812345678"
+ },
+ {
+  "id": 14,
+  "label": "SCAM",
+  "type": "parcel_customs",
+  "text": "Your parcel is held at customs due to incomplete address. Pay Rs 49 redelivery fee at http://india-post-track.top/pay"
+ },
+ {
+  "id": 15,
+  "label": "SCAM",
+  "type": "lottery_prize",
+  "text": "Congratulations! You have won Rs 25,00,000 in KBC lucky draw. Claim your prize by paying processing fee Rs 2,500."
+ },
+ {
+  "id": 16,
+  "label": "SCAM",
+  "type": "lottery_prize",
+  "text": "आपने लॉटरी जीती है! इनाम पाने के लिए अभी इस नंबर पर संपर्क करें और रजिस्ट्रेशन फीस जमा करें।"
+ },
+ {
+  "id": 17,
+  "label": "SCAM",
+  "type": "job_offer",
+  "text": "Work from home part-time job. Earn Rs 5000 per day by liking videos. Registration fee Rs 500. Join WhatsApp group now."
+ },
+ {
+  "id": 18,
+  "label": "SCAM",
+  "type": "job_offer",
+  "text": "Task based job: complete simple tasks and earn daily. Joining fee Rs 1000 refundable. Reply YES."
+ },
+ {
+  "id": 19,
+  "label": "SCAM",
+  "type": "investment",
+  "text": "Join our VIP trading group. Guaranteed returns 30% monthly, stock tips by SEBI expert. Limited seats, join today."
+ },
+ {
+  "id": 20,
+  "label": "SCAM",
+  "type": "investment",
+  "text": "Double your money in 30 days! Crypto investment opportunity with guaranteed profit. Send Rs 10,000 to start."
+ },
+ {
+  "id": 21,
+  "label": "SCAM",
+  "type": "loan_app",
+  "text": "Instant loan approved without documents. Download the app from this link: http://loan-fast.xyz/app.apk and install now."
+ },
+ {
+  "id": 22,
+  "label": "SCAM",
+  "type": "tech_support",
+  "text": "Your bank sent us to fix a refund problem. Please install AnyDesk and share the 9 digit code so we can credit your money."
+ },
+ {
+  "id": 23,
+  "label": "SCAM",
+  "type": "relative_in_need",
+  "text": "Hi this is your nephew, I lost my phone, this is my new number. I am in an accident and need Rs 20,000 urgent, send now to this UPI."
+ },
+ {
+  "id": 24,
+  "label": "SCAM",
+  "type": "phishing_other",
+  "text": "Your SIM will be blocked in 2 hours. Share the OTP sent to your phone to confirm your identity."
+ },
+ {
+  "id": 25,
+  "label": "SCAM",
+  "type": "fake_bank_link",
+  "text": "ICICI Alert: Suspicious login detected on your account. Secure your account now: http://icici-secure-login.xyz"
+ },
+ {
+  "id": 26,
+  "label": "SCAM",
+  "type": "kyc_expiry",
+  "text": "Dear Customer, your PAN is not linked with Aadhaar, account will be blocked. Update immediately https://pan-update.vip/link"
+ },
+ {
+  "id": 27,
+  "label": "SCAM",
+  "type": "phishing_other",
+  "text": "Income Tax Department: refund of Rs 15,490 approved. Verify bank details here http://incometax-refund.top to receive."
+ },
+ {
+  "id": 28,
+  "label": "SAFE",
+  "type": "none",
+  "text": "Rs 1,250.00 debited from A/c XX4821 on 17-Oct-26 at BIGBASKET. If not you, call the number on the back of your card. Never share OTP."
+ },
+ {
+  "id": 29,
+  "label": "SAFE",
+  "type": "none",
+  "text": "123456 is your OTP for login. Do not share this OTP with anyone. Valid for 10 minutes."
+ },
+ {
+  "id": 30,
+  "label": "SAFE",
+  "type": "none",
+  "text": "Your Amazon order #402-1234567 has been delivered. Rate your experience in the app."
+ },
+ {
+  "id": 31,
+  "label": "SAFE",
+  "type": "none",
+  "text": "Hi dad, dinner at 8 tonight? Mom is bringing the cake."
+ },
+ {
+  "id": 32,
+  "label": "SAFE",
+  "type": "none",
+  "text": "Reminder: appointment with Dr. Sharma tomorrow at 11:30 AM at City Clinic. Reply 1 to confirm."
+ },
+ {
+  "id": 33,
+  "label": "SAFE",
+  "type": "none",
+  "text": "Your electricity bill of Rs 1,240 for September is generated. Due date 25 Oct. Pay through the official app or website."
+ },
+ {
+  "id": 34,
+  "label": "SAFE",
+  "type": "none",
+  "text": "Rs 5,000.00 credited to your account XX4821 on 18-Oct-26 by NEFT from RAMESH KUMAR."
+ },
+ {
+  "id": 35,
+  "label": "SAFE",
+  "type": "none",
+  "text": "Your Zomato order is on the way. Delivery partner Suresh will arrive in 12 minutes."
+ },
+ {
+  "id": 36,
+  "label": "SAFE",
+  "type": "none",
+  "text": "Happy Diwali to you and your family! Wishing you lots of light and joy."
+ },
+ {
+  "id": 37,
+  "label": "SAFE",
+  "type": "none",
+  "text": "Your train PNR 4521367890 is confirmed. Coach S4, Seat 32. Happy journey! - IRCTC"
+ },
+ {
+  "id": 38,
+  "label": "SAFE",
+  "type": "none",
+  "text": "बेटा, आज शाम को घर आ जाना, खाना साथ में खाएंगे।"
+ },
+ {
+  "id": 39,
+  "label": "SAFE",
+  "type": "none",
+  "text": "Your mobile recharge of Rs 299 is successful. Validity 28 days. Thank you for choosing Jio."
+ },
+ {
+  "id": 40,
+  "label": "SAFE",
+  "type": "none",
+  "text": "Meeting moved to 4 pm tomorrow. Please bring the printed documents."
+ },
+ {
+  "id": 41,
+  "label": "SAFE",
+  "type": "none",
+  "text": "Your KYC verification is complete. Thank you for updating your details with the bank."
+ },
+ {
+  "id": 42,
+  "label": "SAFE",
+  "type": "none",
+  "text": "ನಾಳೆ ಸಂಜೆ ದೇವಸ್ಥಾನಕ್ಕೆ ಹೋಗೋಣ, ಅಮ್ಮ ಕರೆದಿದ್ದಾರೆ."
+ },
+ {
+  "id": 43,
+  "label": "SAFE",
+  "type": "none",
+  "text": "Your LPG cylinder booking is confirmed. Delivery expected on 20 Oct between 9 AM and 1 PM."
+ }
+]

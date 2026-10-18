@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Guardians can read only the reports of their own family (guardianUid is stamped by the server).
+    match /reports/{id} {
+      allow read: if request.auth != null && resource.data.guardianUid == request.auth.uid;
+      allow write: if false;
+    }
+    // Scam Radar campaigns are anonymised community data: any signed-in user can read them.
+    match /campaigns/{id} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+    // Family docs hold the guardian's phone/blocklist: guardian only.
+    match /families/{code} {
+      allow read: if request.auth != null && resource.data.guardianUid == request.auth.uid;
+      allow write: if false;
+    }
+    // Everything else (radar_items with embeddings, etc.) is server-only.
+    match /{document=**} { allow read, write: if false; }
+  }
+}

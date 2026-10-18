@@ -1,0 +1,9 @@
+{
+  "firestore": { "rules": "firestore.rules", "indexes": "firestore.indexes.json" },
+  "hosting": {
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [{ "source": "**", "run": { "serviceId": "kavach", "region": "asia-south1" } }]
+  },
+  "emulators": { "firestore": { "port": 8085 }, "ui": { "enabled": false } }
+}

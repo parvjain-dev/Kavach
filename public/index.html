@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kavach | Family scam shield</title>
+<meta name="description" content="Forward any suspicious SMS, screenshot or voice note. Kavach tells you in your own language if it is a scam, names the trick, and alerts your family.">
+<meta name="theme-color" content="#1b2559">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 4 8 14v18c0 14 10 24 24 28 14-4 24-14 24-28V14z' fill='%231b2559'/%3E%3Cpath d='m21 32 8 8 15-17' fill='none' stroke='%23fff' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="2.2"/>
+  </filter>
+</svg>
+<header class="top">
+  <a class="brand" href="#/" aria-label="Kavach home"><b>कवच</b><span>Kavach</span></a>
+  <nav class="nav" aria-label="Main">
+    <a href="#/check" data-nav="check">Check a message</a>
+    <a href="#/guardian" data-nav="guardian">Family dashboard</a>
+  </nav>
+</header>
+<main id="app" tabindex="-1"></main>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<noscript><p style="padding:24px">Kavach needs JavaScript to check messages.</p></noscript>
+<script src="/firebase-config.js"></script>
+<script type="module" src="/app.js"></script>
+</body>
+</html>
