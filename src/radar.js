@@ -6,7 +6,7 @@ import { cosine, embedTexts } from './embed.js';
 
 const WINDOW_MS = 24 * 3600 * 1000;
 const T = {
-  gemini: { base: 0.72, strong: 0.86 },
+  gemini: { base: 0.80, strong: 0.94 },
   local: { base: 0.42, strong: 0.78 },
 };
 export const ALERT_AT = 3;
@@ -23,10 +23,14 @@ export async function ingest(store, { text, scamType, label, familyId, tactics =
   const th = embedder === 'local-hash' ? T.local : T.gemini;
   const recent = (await store.listRadarItems(ts - WINDOW_MS, 150)).filter((i) => i.embedder === embedder && i.ts <= ts + 1000);
 
-  const neighbors = recent.filter((i) => {
-    const s = cosine(vector, i.embedding);
-    return s >= th.strong || (s >= th.base && scamType !== 'none' && i.scamType === scamType);
-  });
+  // A report joins an existing group only when it is the same kind of scam and
+  // clearly similar, or near-identical text. Groups are never merged together,
+  // so one odd message cannot glue two different campaigns into one.
+  const sameKind = (i) => scamType !== 'none' && i.scamType === scamType;
+  const neighbors = recent
+    .map((i) => ({ i, s: cosine(vector, i.embedding) }))
+    .filter(({ i, s }) => (sameKind(i) && s >= th.base) || s >= th.strong)
+    .map(({ i }) => i);
 
   const item = { id: randomUUID(), ts, embedding: vector, embedder, scamType, label, familyId, seed, snippet: sanitizeSnippet(text), tactics: tactics.slice(0, 3), campaignId: null };
 
@@ -36,7 +40,8 @@ export async function ingest(store, { text, scamType, label, familyId, tactics =
     for (const n of neighbors) if (n.campaignId) votes[n.campaignId] = (votes[n.campaignId] || 0) + 1;
     campaignId = Object.entries(votes).sort((a, b) => b[1] - a[1])[0]?.[0] || null;
     if (!campaignId) campaignId = randomUUID().slice(0, 12);
-    for (const n of neighbors) if (n.campaignId !== campaignId) { n.campaignId = campaignId; await store.updateRadarItem(n.id, { campaignId }); }
+    // Only adopt neighbours that are not already in another campaign.
+    for (const n of neighbors) if (!n.campaignId) { n.campaignId = campaignId; await store.updateRadarItem(n.id, { campaignId }); }
     item.campaignId = campaignId;
   }
   await store.addRadarItem(item);
